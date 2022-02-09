@@ -1,0 +1,95 @@
+
+
+body {
+    font-family: 'Zen Kurenaido';font-size: 22px;
+    background-color: #fcfcfc;
+}
+
+
+.one {
+    border-style: hidden;
+    border-width: 5px;
+    max-width: 73%;
+    max-height: 20%;
+    margin: 0;
+    padding: 0;
+}
+
+.align {
+    text-align: start;
+
+}
+
+.bar {
+    background-color: rgb(0, 0, 0);
+    padding: 20px
+}
+
+ul {
+    overflow: visible;
+    position: fixed;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    min-width: 10%;
+    min-height: 7%;
+    background-color: rgb(200, 199, 202);
+
+}
+li a {
+    color: slategrey;
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+
+}
+
+li a:hover {
+    background-color: snow;
+}
+
+li a:active {
+
+    background-color: rgb(5, 3, 3);
+    color: black;
+
+}
+
+.links {
+
+    color: rgb(255, 255, 255);
+    background-color: rgb(33, 40, 53);
+
+}
+
+.but {
+
+    border-style: dashed;
+    width: 500px;
+    height: 150px; 
+    color: rgb(255, 255, 255); 
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    
+
+}
+
+.but:hover {
+
+    background-color: rgb(241, 209, 170);
+
+}
+
+.but:active {
+
+    background-color: black;
+
+}
+
+@media all and (max-width: 425px) {
+    ul{
+
+        position: relative;
+
+    }
+}
