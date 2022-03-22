@@ -1,28 +1,15 @@
-
-
 body {
-    font-family: 'Zen Kurenaido';font-size: 22px;
     background-color: #fcfcfc;
 }
 
+.bod {
 
-.one {
-    border-style: hidden;
-    border-width: 5px;
-    max-width: 73%;
-    max-height: 20%;
-    margin: 0;
-    padding: 0;
-}
+    align-self: center;
+    margin: auto;
+    width: auto;
+    border-style: none;
+    max-width: max-content;
 
-.align {
-    text-align: start;
-
-}
-
-.bar {
-    background-color: rgb(0, 0, 0);
-    padding: 20px
 }
 
 ul {
@@ -31,13 +18,14 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    min-width: 10%;
-    min-height: 7%;
-    background-color: rgb(200, 199, 202);
+    min-width: 15px;
+    min-height: 15px;
+    background-color: none;
 
 }
+
 li a {
-    color: slategrey;
+    color: black;
     display: block;
     padding: 16px;
     text-decoration: none;
@@ -45,13 +33,47 @@ li a {
 }
 
 li a:hover {
-    background-color: snow;
+    background-color: rgb(104, 98, 98);
 }
 
 li a:active {
 
     background-color: rgb(5, 3, 3);
     color: black;
+
+}
+
+h2 {
+
+    align-content: left;
+    margin: auto;
+    width: 80%;
+    max-height: 100px;
+    max-width: 400px;
+    padding: 5px;
+
+}
+
+.text {
+
+    font-family: 'Zen Kurenaido';
+    font-size: 20px;
+    align-content: left;
+    margin: auto;
+    width: 80%;
+    max-height: 170px;
+    max-width: 550px;
+    padding: 4px;
+    border-style: none;
+
+}
+
+.line {
+
+    width: 80%;
+    max-height: 170px;
+    max-width: 550px;
+    padding: 2px;
 
 }
 
@@ -62,34 +84,87 @@ li a:active {
 
 }
 
-.but {
+.links:hover {
 
-    border-style: dashed;
-    width: 500px;
-    height: 150px; 
-    color: rgb(255, 255, 255); 
+    background-color: aliceblue;
+    color: black;
+
+}
+
+.bar {
+
     background-color: rgb(0, 0, 0);
-    text-decoration: none;
+    padding: 20px;
+    animation-name: bar;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes bar {
+
+    0% {background-color: black;}
+    50% {background-color: rgba(128, 128, 128, 0.199);}
+    75% {background-color: black;}
+    100% {background-color: black;}
+
+}
+
+.banner {
+
+    margin: auto;
+    width: 80%;
+    height: 80%;
+
+}
+
+.icons {
+
+    margin: 7px;
+    background-size: 40px;
+    font-size: 30px;
     
-
 }
 
-.but:hover {
-
-    background-color: rgb(241, 209, 170);
-
-}
-
-.but:active {
-
+button {
+    width: auto;
+    height: 50px;
     background-color: black;
-
+    color: white;
+    margin: 20px;
+    padding: 5px;
 }
 
-@media all and (max-width: 425px) {
+button:hover {
+    background-color: rgb(242, 253, 253);
+    color: black;
+    cursor: pointer;
+}
+/* EDIT THE CODE FOR MOBILE PHONES ETC*/
+
+@media all and (max-width: 790px) {
     ul{
 
-        position: relative;
+        visibility: hidden;
 
+    }
+}
+
+@media all and (max-width: 450px) {
+
+    button {
+        margin: 35px;
+    }
+
+    .text {
+        font-size: large;
+
+    }
+}
+
+@media all and (min-width: 1024px) {
+
+    .text {
+        font-size: x-large;
     }
 }
