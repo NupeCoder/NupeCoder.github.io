@@ -140,6 +140,14 @@ button:hover {
     color: black;
     cursor: pointer;
 }
+
+.current{
+
+    margin: auto;
+    width: 65%;
+    border-style: dashed;
+    max-width: auto;
+}
 /* EDIT THE CODE FOR MOBILE PHONES ETC*/
 
 @media all and (max-width: 790px) {
