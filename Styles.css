@@ -33,9 +33,10 @@ li a:active {
 
 }
 
-h2 {
+.heading {
+    display: flex;
     font-family: 'Avenir';
-    align-content: left;
+    justify-content: center;
     margin: auto;
     width: 80%;
     max-height: 100px;
@@ -47,11 +48,10 @@ h2 {
 .text {
 
     font-family: 'Zen Kurenaido';
-    font-size: 20px;
-    align-content: left;
+
     margin: auto;
     width: 80%;
-    max-height: 170px;
+    max-height: 400px;
     max-width: 550px;
     padding: 4px;
     border-style: none;
@@ -73,30 +73,23 @@ h2 {
 
 }
 
-@keyframes bar {
 
-    0% {background-color: black;}
-    50% {background-color: rgba(128, 128, 128, 0.199);}
-    75% {background-color: black;}
-    100% {background-color: black;}
-
+.cen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
 }
 
-
-button {
+.center-button {
     width: auto;
     height: 50px;
-    background-color: black;
-    color: white;
+    background-color: indianred;
+    color: rgb(0, 0, 0);
     margin: 20px;
     padding: 5px;
     font-family: 'Zen Kurenaido';
-}
-
-.cen {
-    align-content: center;
-    justify-content: center;
-    align-self: center;
+    cursor: pointer;
 }
 
 button:hover {
