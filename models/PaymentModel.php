@@ -1,7 +1,7 @@
 <?php
 
 class PaymentModel {
-    public function processPayment($amount, $currency) {
+    public function processPayment($amount, $currency /* add options for currencies */) {
 
         $ch = curl_init(); // Initialise cURL 
 
@@ -16,7 +16,7 @@ class PaymentModel {
         // Give it Data from the User | example for now
         $exampleDataNaira = [
             "email" => "limanzaffar@gmail.com",
-            "amount" => 5000, // Kobo amount for NGN
+            "amount" => $amount, // Kobo amount for NGN
             "callback_url" => "https://www.nupecoder.github.io" // might want to use local port
         ];
 

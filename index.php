@@ -9,7 +9,9 @@ $action = $_GET["action"] ?? "index";
 switch ($action) {
     case 'processPayment':
         # code...
-        print_r("BUTTON");
+        echo("button") ;
+        $controller->processPayment();
+
         break; 
     default:
         $controller->index();;
