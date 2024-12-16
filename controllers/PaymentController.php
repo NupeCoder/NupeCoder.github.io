@@ -2,11 +2,13 @@
 
 class PaymentController {
 
-    function index() {
+    public function index() {
         require_once 'views/index.phtml';
     }
 
-    
+    public function handleDonation() {
+        
+    }
 
 }
 
