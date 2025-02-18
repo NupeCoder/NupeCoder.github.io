@@ -126,3 +126,24 @@ button:hover {
         font-size: x-large;
     }
 }
+
+.slideshow-container {
+    display: flex;
+    font-family: 'Avenir';
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+    
+    max-width: 400px;
+    padding: 5px;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
