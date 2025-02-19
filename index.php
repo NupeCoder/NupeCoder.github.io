@@ -1,20 +1,21 @@
 <?php
 require 'views/header.phtml';
 require_once 'controllers/PaymentController.php';
+require_once 'controllers/PageController.php';
 
-$controller = new PaymentController();
+
+$page = new PageController();
 
 $action = $_GET["action"] ?? "index";
 
 switch ($action) {
-    case 'processPayment':
+    case 'donation':
         # code...
-        echo("button") ;
-        $controller->processPayment();
+        $page->donation();
 
         break; 
     default:
-        $controller->index();;
+        $page->index();
 }
 
 

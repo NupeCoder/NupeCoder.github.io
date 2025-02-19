@@ -1,14 +1,12 @@
 <?php
 
+require "models/PaymentModel.php";
+
 class PaymentController {
 
-    public function index() {
-        require_once 'views/index.phtml';
-    }
-
-    public function processPayment() {
+    public function startPayment( $amount ) {
         $paymentModel = new PaymentModel();
-        $response = $paymentModel->processPayment(5000, 'NGN'); // Example: amount = 5000 kobo, currency = NGN
+        $response = $paymentModel->processPayment($amount, 'NGN'); // Example: amount = 5000 kobo, currency = NGN
 
         // Route to success page if payment succeeds
 

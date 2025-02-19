@@ -1,0 +1,15 @@
+<body>
+
+    <div class="container">
+        <h2>Make a Donation</h2>
+        <p id="amount-display">₦0</p> <!-- Dynamic value display -->
+        <form method="POST" action="donation.php?action=processPayment">
+            <input type="number" id="amount" name="amount" min="1" required oninput="updateAmount()">
+            <button type="submit">Next Page</button>
+        </form>
+    </div>
+
+    <script src='donationcounter.js'>updateAmount()</script>
+
+</body>
+
